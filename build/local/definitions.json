@@ -1,0 +1,16 @@
+{
+  "exchanges": [
+    {"name": "my_topic_exchange", "type": "topic", "durable": true}
+  ],
+  "queues": [
+    {"name": "my_queue", "durable": true}
+  ],
+  "bindings": [
+    {
+      "source": "my_topic_exchange",
+      "destination": "my_queue",
+      "destination_type": "queue",
+      "routing_key": "my.key.*"
+    }
+  ]
+}
