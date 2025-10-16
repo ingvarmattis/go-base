@@ -2,13 +2,14 @@ package main
 
 import (
 	"context"
-	"github.com/jackc/pgx/v5/pgxpool"
-	"go-base/src/box"
-	"go.uber.org/zap"
 	"os"
 	"os/signal"
 	"sync"
 	"syscall"
+
+	"github.com/jackc/pgx/v5/pgxpool"
+	"go-base/src/box"
+	"go.uber.org/zap"
 )
 
 func main() {

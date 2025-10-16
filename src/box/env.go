@@ -3,11 +3,12 @@ package box
 import (
 	"context"
 	"fmt"
+	"os"
+	"time"
+
 	"github.com/jackc/pgx/v5/pgxpool"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"os"
-	"time"
 )
 
 type Env struct {
